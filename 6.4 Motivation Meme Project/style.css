@@ -1,0 +1,32 @@
+html{
+    background-color: rgb(22, 22, 22);
+}
+
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border: 1vw solid rgb(222, 222, 222);
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+    color: whitesmoke;
+}
+
+p{
+    color: whitesmoke;
+}
+
+*{
+    text-align: center;
+}
+
+div{
+    margin: 5vw;
+}

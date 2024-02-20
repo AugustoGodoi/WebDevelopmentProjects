@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Define o contêiner como uma grade com três colunas e duas linhas */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1.5fr; /* Define três colunas com larguras proporcionais */
+      grid-template-rows: 0.5fr 1fr; /* Define duas linhas com alturas proporcionais */
+      gap: 10px; /* Adiciona espaçamento entre as células da grade */
+    }
+
+    /* Estiliza os itens dentro da grade */
+    .item {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+      background-color: rgb(12, 22, 122); /* Cor de fundo usando RGB */
+      color: rgb(222, 222, 222); /* Cor do texto usando RGB */
+    }
+
+    /* Estiliza a explicação */
+    .explanation {
+      font-style: italic;
+      margin-top: 10px;
+      color: rgb(12, 22, 122); /* Cor do texto usando RGB */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contêiner de grade -->
+  <div class="container">
+    <!-- Itens dentro da grade -->
+    <div class="item">1</div> <!-- Este item será colocado na primeira coluna e primeira linha -->
+    <div class="item">2</div> <!-- Este item será colocado na segunda coluna e primeira linha -->
+    <div class="item">3</div> <!-- Este item será colocado na terceira coluna e primeira linha -->
+    <div class="item">4</div> <!-- Este item será colocado na primeira coluna e segunda linha -->
+    <div class="item">5</div> <!-- Este item será colocado na segunda coluna e segunda linha -->
+    <div class="item">6</div> <!-- Este item será colocado na terceira coluna e segunda linha -->
+  </div>
+
+  <!-- Explicações com comentários -->
+  <div class="explanation">
+    <p><strong>Explicação:</strong></p>
+    <p>Cada número representa um item dentro da grade.</p>
+    <p>A grade é definida com três colunas de larguras proporcionais (1fr, 2fr, 1.5fr) e duas linhas de alturas proporcionais (0.5fr, 1fr).</p>
+    <p>O espaçamento entre as células da grade é de 10 pixels.</p>
+    <p>A cor de fundo dos itens é uma combinação de RGB (12, 22, 122).</p>
+    <p>A cor do texto é uma combinação de RGB (222, 222, 222).</p>
+  </div>
+
+</body>
+</html>

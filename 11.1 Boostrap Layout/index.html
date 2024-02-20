@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Inserir e Usar Bootstrap</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-bg {
+            background-color: lightgray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título -->
+        <h1>Como Inserir e Usar Bootstrap</h1>
+        
+        <!-- Passo 1: Incluindo o Bootstrap -->
+        <h2>Passo 1: Incluindo o Bootstrap</h2>
+        <p>Para começar a usar o Bootstrap, inclua o link para o arquivo CSS do Bootstrap em sua página HTML, dentro da tag &lt;head&gt;:</p>
+        <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code></pre>
+
+        <!-- Passo 2: Criando um Container -->
+        <h2>Passo 2: Criando um Container</h2>
+        <p>Use a classe <code>.container</code> para criar um contêiner responsivo para envolver o conteúdo da página e centralizá-lo horizontalmente:</p>
+        <pre><code>&lt;div class="container"&gt;
+    <!-- Seu conteúdo aqui -->
+&lt;/div&gt;</code></pre>
+
+        <!-- Passo 3: Adicionando Componentes -->
+        <h2>Passo 3: Adicionando Componentes</h2>
+        <p>Use os componentes do Bootstrap, como cards, para estruturar o conteúdo da sua página de forma visualmente atraente:</p>
+        <!-- Exemplo de Card -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Título do Card</h5>
+                <p class="card-text">Este é um exemplo de texto do card. Você pode adicionar qualquer conteúdo aqui.</p>
+            </div>
+        </div>
+
+        <!-- Passo 4: Personalizando Estilos -->
+        <h2>Passo 4: Personalizando Estilos</h2>
+        <p>Além das classes Bootstrap padrão, você pode adicionar estilos personalizados usando classes CSS personalizadas:</p>
+        <pre><code>.custom-bg {
+    background-color: lightgray;
+    padding: 20px;
+}</code></pre>
+        
+        <!-- Exemplo de Card com Estilo Personalizado -->
+        <div class="card custom-bg">
+            <div class="card-body">
+                <h5 class="card-title">Título do Card Personalizado</h5>
+                <p class="card-text">Este é um exemplo de texto do card com estilo personalizado.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript do Bootstrap (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

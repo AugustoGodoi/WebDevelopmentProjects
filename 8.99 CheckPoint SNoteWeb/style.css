@@ -1,0 +1,38 @@
+.page {
+    width: 100%;
+    aspect-ratio: 1/1.41;
+    background-size: 18px 18px;
+    background-image:
+      linear-gradient(to bottom, grey 1px, transparent 1px);
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
+    padding: 0%;
+  }
+
+  
+  .page div{
+      border: 2px solid red;
+      margin-top: 3.5px;
+    }
+
+    .summary{
+        background-color: aquamarine;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 14px;
+        margin: 0%;
+        margin-left: 10px;
+    }
+
+    p{
+        font-size: 12px;
+    }
