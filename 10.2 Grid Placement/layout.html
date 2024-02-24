@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(4, 25%);
+        }
+        .header {
+            border: 2px solid gray;
+            grid-area: 1 / 1 / 1 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="keywords"></div>
+        <div class="notes"></div>
+        <div class="summary"></div>
+    </div>
+    
+</body>
+</html>
