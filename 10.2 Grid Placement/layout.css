@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(222, 222, 222)
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    /* grid-template-rows: repeat(4, 25%); */
+    grid-template-rows: 10% 40% 40% 10%;
+    min-height: 100vh;
+    gap: 12px;
+}
+.header {
+    border: 2px solid gray;
+    grid-area: 1 / 1 / 1 / 5;
+}
+.keywords {
+    grid-area: 2 / 1 / 4 / 1;
+    border: 2px solid gray;
+}
+.notes {
+    grid-area: 2 / 2 / 4 / 5;
+    border: 2px solid gray;
+}
+
+.summary {
+    grid-area: 4 / 1 / 5 / 5;
+    border: 2px solid gray;
+}
