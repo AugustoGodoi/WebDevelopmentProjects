@@ -1,4 +1,8 @@
 # -*- coding:utf-8 -*-
+
+import arrr
+from pyscript import document
+
 #Cálculo em Viga bi-apoiada
 print("Cálculo em Viga bi-apoiada nas extremidades")
 
