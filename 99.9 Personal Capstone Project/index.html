@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viga bi-apoiada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+
+    <py-script>
+        # -*- coding:utf-8 -*-
+        #Cálculo em Viga bi-apoiada
+        print("Cálculo em Viga bi-apoiada nas extremidades")
+
+        L=input("Comprimento da viga [m]: ")
+        L=eval(L.replace(",","."))
+
+        F=input("Força aplicada em [N]: ")
+        F=eval(F.replace(",","."))
+
+        xF=input("Local de aplicação da força [m]: ")
+        xF=eval(xF.replace(",","."))
+
+
+        #Somatória das força verticais, para cima como positivo
+        #Ra+Rb-F=0
+        #Rb=F-Ra
+        #Ra=F-Rb
+
+        #Momento (Ma) a respeito do ponto A em x=0, sentido horário como positivo
+        #F*xF-Rb*L=0
+        Rb=F*xF/L
+        Ra=F-Rb
+
+        #Momentos iguais a zero
+        Ma=F*xF-Rb*L
+        Mb=Ra*L-F*(L-xF)
+
+        Mmax=max(Ra*xF, Rb*(L-xF))  #Momento máximo
+
+        fs=input("Fator de Segurança: ")
+        fs=eval(fs.replace(",","."))
+        T=input("Tensão Máxima de Escoamento [MPa]: ")
+        T=eval(T.replace(",","."))
+        Tadm=T/fs #Tensão Admissível
+
+        W=(Mmax/(Tadm*10**6))*10**9
+
+        #Mostrar os resultados
+        print("As forças de Reações são: Ra=","%.2f" % Ra, "N e Rb=%.2f" % Rb, "N")
+        #print("Os Momentos são: Ma=%.2f" % Ma, "N.m Mb=%.2f" % Mb, "N.m")
+        print("Momento máximo =%.3e" % Mmax, "N.m")
+        print("O módulo de resistência requerido Wreq=,","%.3e" % W, "mm^3")
+    </py-script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
