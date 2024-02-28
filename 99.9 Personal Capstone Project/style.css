@@ -1,7 +1,47 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-between;
     padding: 12px;
-    background-color:whitesmoke;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.result-container {
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: rgb(222, 222, 222);
+    border-radius: 12px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }

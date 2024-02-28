@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Viga Bi-apoiada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/airplane.svg" height="22" width="22" class="d-inline-block align-text-top">
+            Godoi Engineering Toolkit
+          </a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Cálculo de Viga Bi-apoiada</h2>
+        <div class="input-container">
+            <label for="comprimento">Comprimento da viga [m]: </label>
+            <input type="number" id="comprimento" step="0.01">
+        </div>
+        <div class="input-container">
+            <label for="forca">Força aplicada em [N]: </label>
+            <input type="number" id="forca">
+        </div>
+        <div class="input-container">
+            <label for="local_aplicacao">Local de aplicação da força [m]: </label>
+            <input type="number" id="local_aplicacao" step="0.01">
+        </div>
+        <div class="input-container">
+            <label for="fator_seguranca">Fator de Segurança: </label>
+            <input type="number" id="fator_seguranca" step="0.01">
+        </div>
+        <div class="input-container">
+            <label for="tensao_maxima">Tensão Máxima de Escoamento [MPa]: </label>
+            <input type="number" id="tensao_maxima" step="0.01">
+        </div>
+        <button type="button" class="btn btn-success" onclick="calcular()">Calcular</button>
+    
+        <div class="result-container" id="resultado"></div>
+    </main>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="./index.html"><img src="./images/airplane.svg" height="22" width="22" class="d-inline-block align-text-top">GET</a></li>
+        </ul>
+      </div>
+
+    <script>
+        function calcular() {
+            const L = parseFloat(document.getElementById('comprimento').value);
+            const F = parseFloat(document.getElementById('forca').value);
+            const xF = parseFloat(document.getElementById('local_aplicacao').value);
+            const fs = parseFloat(document.getElementById('fator_seguranca').value);
+            const T = parseFloat(document.getElementById('tensao_maxima').value);
+
+            const Rb = F * xF / L;
+            const Ra = F - Rb;
+            const Ma = F * xF - Rb * L;
+            const Mb = Ra * L - F * (L - xF);
+            const Mmax = Math.max(Ra * xF, Rb * (L - xF));
+            const Tadm = T / fs;
+            const W = (Mmax / (Tadm * Math.pow(10, 6))) * Math.pow(10, 9);
+
+            const resultado = `
+                <p>As forças de Reações são: Ra=${Ra.toFixed(2)} N e Rb=${Rb.toFixed(2)} N</p>
+                <p>Momento máximo = ${Mmax.toExponential()} N.m</p>
+                <p>O módulo de resistência requerido Wreq = ${W.toExponential()} mm^3</p>
+            `;
+
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
