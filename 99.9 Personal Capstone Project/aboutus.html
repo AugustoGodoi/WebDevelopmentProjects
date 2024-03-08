@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body class="d-flex">
+<body>
     <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
@@ -21,73 +21,89 @@
         </div>
     </nav>
 
-    <div class="d-flex flex-column flex-fill flex-shrink-0 bg-body-tertiary" style="width: 4.5rem;">
-                <a href="./aboutus.html" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                    GET®
-                </a>
-                <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link active py-3 border-bottom rounded-2" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="gold" class="bi bi-airplane" viewBox="0 0 16 16">
-                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+    <div class="container-fluid mt-4 px-0 d-flex" style="height: 100%;">
+      <div class="row">
+        <div class="col-2">
+          <div class="d-flex flex-column h-100 flex-shrink-0 bg-body-tertiary rounded-2" style="width: 5rem;">
+                      <a href="./index.html" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                          GET®
+                      </a>
+                      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link active py-3 border-bottom rounded-2" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="gold" class="bi bi-airplane" viewBox="0 0 16 16">
+                                  <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"></use></svg>
+                            2TkAu
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
+                            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"></use></svg>
+                            3
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"></use></svg>
+                            4
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
+                            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"></use></svg>
+                          5
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="dropdown border-top">
+                        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                            <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                            <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
                           </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                      <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"></use></svg>
-                      2TkAu
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
-                      <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"></use></svg>
-                      3
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
-                      <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"></use></svg>
-                      4
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
-                      <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"></use></svg>
-                    5
-                    </a>
-                  </li>
-                </ul>
-                <div class="dropdown border-top">
-                  <a href="#" class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
-                      <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
-                      <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
-                    </svg>
-                  </a>
-                  <ul class="dropdown-menu text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                  </ul>
-                </div>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                          <li><a class="dropdown-item" href="#">New project...</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                      </div>
+          </div>
+        </div>
+
+        <div class="col-10">
+          <h1>About us.</h1>
+          <p class="lead">
+            Welcome to our "About Us" page! At <span>GET®</span>, our mission is to streamline the lives of engineers through innovative code engineering tools. We understand the challenges and complexities that engineers face daily, which is why we're dedicated to providing solutions that make their work more efficient, effective, and enjoyable.
+
+Our journey began with a simple yet powerful idea: to create tools that empower engineers to tackle their projects with confidence and ease. Whether you're a seasoned professional or just starting your engineering career, our suite of tools is designed to meet your needs and exceed your expectations.
+          </p>
+          <p class="lead">
+          <a href="./contact.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Contact us</a>
+          </p>
+        </div>
+
+      </div>
+
     </div>
 
-    <main class="px-3">
-        <h1>Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-        <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-        </p>
-    </main>
+
+
+  
 
     <footer>
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2024 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="./aboutus.html"><img src="./images/airplane.svg" height="22" width="22" class="d-inline-block align-text-top">GET®</a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="./index.html"><img src="./images/airplane.svg" height="22" width="22" class="d-inline-block align-text-top">GET®</a></li>
             </ul>
           </div>
     </footer>
