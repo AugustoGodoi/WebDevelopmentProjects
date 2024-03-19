@@ -42,6 +42,17 @@ button:hover {
     border-radius: 12px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 750;
     font-style: normal;
+    padding: 4px;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.alumni-sans-fontbody {
+  font-family: "Alumni Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
