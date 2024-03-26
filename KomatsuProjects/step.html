@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>STEP</title>
+        <link rel="stylesheet" href="./style.css">
+		<style>
+			/* html {
+				background-color: gray;
+			}			 */
+			body {
+				min-height: 100vh;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+			model-viewer {
+				min-height: 100vh;
+				min-width: 100%;
+			}
+		</style> 
+	</head>
+	
+	<body >
+				<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+		
+                <div id="head">
+                    <a href="./index.html"><img src="./static/images/komatsu.png" /></a>
+                </div>
+		
+		<model-viewer src="./static/3dfiles/3d.gltf" camera-controls poster="poster.webp" shadow-intensity="2" environment-image="./static/images/BLANKS.jpg">
+			<div class="progress-bar hide" slot="progress-bar">
+				<div class="update-bar"></div>
+			</div>
+		</model-viewer>
+
+		
+	</body>
+</html>

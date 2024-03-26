@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Projetos em Andamento/40-12126/STEP/40-12126-00a_asm_www"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "40-12126-00a_asm_www"
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "msedge",
+				"name": "http://127.0.0.1:3002/KomatsuProjects/index.html",
+				"request": "launch",
+				"url": "http://127.0.0.1:3002/KomatsuProjects/index.html"
+			}
+		]
+	}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Design Structure</title>
+
+</head>
+<body>
+	<div id="head">
+	<a href="./index.html"><img src="./static/images/komatsu.png" /></a>
+	</div>
+	<h1>Hierarchy Structures of PART NUMBERS<br />to Mechanicals Design
+	</h1>
+	<ul>
+		<li>
+			<h2>40-00000-000</h2>
+			<p>TOP ASSEMBLY on Creo model tree</p>
+			<ul>
+				<li>
+					<h2><a href="./00A.html">40-00000-00A</a></h2>
+					<p>Assembled components with Welded Parts and Comercial Components</p>
+					<p>must be contain only LETTERS on 3 last digits</p>
+					<ul>
+						<li>
+							<h3>40-00000-001</h3>
+							<p><a href="./001.html">Welded Parts</a> and <a
+									href="./002.html">Individual parts</a> to Assembled
+								Components</p>
+							<p>must be contain only NUMBERS on 3 last digits</p>
+							<ul>
+								<li>
+									<h4>40-00000-001-01</h4>
+									<p>Only to parts of Welded Component</p>
+								</li>
+								<p>...</p>
+								<li>
+									<h4>40-00000-999-99</h4>
+								</li>
+							</ul>
+						</li>
+						<p>...</p>
+						<li>
+							<h3>40-00000-999</h3>
+						</li>
+					</ul>
+				</li>
+				<p>...</p>
+				<li>
+					<h2>40-00000-ZZZ</h2>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	</body>
+
+</html>

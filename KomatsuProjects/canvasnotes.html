@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Grid</title>
+  <link rel="stylesheet" href="./canvasnotes.css">
+</head>
+<body>
+  <section class="container">
+    <div id="toolbar">
+          <h1>Note</h1>
+          <label for="stroke">Stroke</label>
+          <input id="stroke" name='stroke' type="color">
+          <label for="lineWidth">Line Width</label>
+          <input id="lineWidth" name='lineWidth' type="number" value="5">
+          <button id="clear">Clear</button>
+      </div>
+      <div>
+          <canvas id="drawing-board"></canvas>
+      </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+  <script src="./canvasnotes.js"></script>
+</body>
+</html>
