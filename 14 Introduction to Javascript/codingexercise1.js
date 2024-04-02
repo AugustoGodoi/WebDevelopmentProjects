@@ -1,5 +1,5 @@
-function test() {
-  var a = "3";
+// function test() {
+  var a = "4";
   var b = "8";
 
   /***********Do not change the code above 👆*******/
@@ -9,4 +9,4 @@ function test() {
 
   console.log("a is " + a);
   console.log("b is " + b);
-}
+// }
